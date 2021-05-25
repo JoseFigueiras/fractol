@@ -13,6 +13,7 @@ void	do_everything(t_scene *scene)
 	//TODO change line below (33 to Mac equivalent)
 	mlx_hook(scene->mlx_data->win, 33, 0, my_destroy_window, scene->mlx_data);
 	mlx_key_hook(scene->mlx_data->win, my_key_hook, scene);
+	mlx_mouse_hook(scene->mlx_data->win, my_mouse_hook, scene);
 	mlx_loop(scene->mlx_data->mlx);
 }
 

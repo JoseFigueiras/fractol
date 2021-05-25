@@ -31,8 +31,8 @@ typedef struct s_pos
 
 typedef struct s_complex
 {
-	float		a;
-	float		b;
+	float		r;
+	float		i;
 }t_complex;
 
 typedef struct s_scene
@@ -41,6 +41,7 @@ typedef struct s_scene
 	t_img		*img_data;
 	t_res		res;
 	t_pos		pos;
+	t_complex	c;
 	int			fractal_type;
 }t_scene;
 
